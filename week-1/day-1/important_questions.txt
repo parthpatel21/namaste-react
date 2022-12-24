@@ -1,0 +1,21 @@
+1. What is Emmet?
+- It is a tool in VS CODE where we need to write abbreviations it provides a snippet.
+- we can change its setting As per our requirement in the setting.json file with the command "emmit.${commmandName}"
+
+2. Difference between a Library and Framework
+- In the case of lib, we have control of the flow of Applications. we decide when and where to call the code. In the case of Framework, the framework has charged to control the call where you plugin code at a given place.
+
+3. What is CDN? Why do we use it?
+- Content Delivery Network is a group of servers spread over the world. These server stores a copy of the original server data. When end-users make requests, CDN full-field their need by providing data from the nearest server from the end-user location so that we can save data transmission time
+
+4. What is crossorigin in script tag?
+- crossorigin attribute informs the browser how it should approach the given resources(link). If we pass the 'anonymous' value, the browser will not send session/cookies data to the resource server and if we pass the 'use-credential' value browser will send cookies/session data to the resource server. 
+
+5. What is diference between React and ReactDOM
+- React is a Common Library to build web and mobile applications whereas ReactDom is specifically for Web Applications that handle a DOM Manipulation Operation.
+
+6. What is difference between react.development.js and react.production.js files via CDN?
+- react.production.js files are minified files Whereas react.development.js are in a readable form which is easy for us to debug if something goes wrong.
+
+7. What is async and defer?
+
