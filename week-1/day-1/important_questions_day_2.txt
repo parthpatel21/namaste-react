@@ -1,0 +1,54 @@
+1. What is NPM?
+- It's not a Node Package manager but it manages our packages in our React App.
+- If we want to get the new package or use their functionality then we can NPM.
+- We can initialize NPM by the 'npm init' command in our Project.
+
+2. What is Parcel/Webpack? why do we need that?
+- Parcel/Webpack are bundlers and it is also packaged.
+- React doesn't have all the superpowers, it requires some external packages to fulfill all the requirements. (eg: Optimization, MiniFying Code, Cacheing, etc)
+- Parcel also has its dependency for their different task.
+
+3. What is .parcel-cache?
+- Parcel requires some space to perform its task, so it created a parcel-cache folder.
+
+4. What is npx?
+- npx is a tool for executing packages whereas npm is only used for installing the packages.
+
+5. What is the difference between `dependencies` vs `devDependencies`
+- dependencies packages are required to run in production for our App.
+- devDependencies packages are only required to run in development.
+
+6. What is Tree Shaking?
+- Parcel support Tree Shaking(i.e It will removed unwanted code)
+- For eg- Suppose the app is importing a library that has 20 functions then all 20 function codes will be in your code. but you only use 1-2 functions in that case parcel will ignore all unused code.
+
+7. What is Hot Module Replacement?
+- It means whatever file you are updating parcel will keep track of that by using File Watcher Algorithm, So it will have an immediate effect on the live development server
+
+8. List down your favorite 5 superpowers of Parcel and describe any 3 of them in your word
+- HMR - Hot Module Replacement
+- Bundling
+- Minify Code - It minifies our code so that it reduces the size of the file and it is a bit fast to load at a client machine
+- Image Optimization
+- Port Number - So if we are running one project on port xx and try to run another project then the parcel will automatically change the port for another project so that both projects run on different ports successfully.
+- Zero Config - 
+- Tree Shaking
+- HTTPS on dev - some applications require a secure server for testing parcels and also provide that
+
+9. What is `.gitignore`? What should we add and not add to it?
+- When we write a file/folder name in .gitignore that file/folder doesn't get sent to the repository.
+- We should write all file/folder names that the server generates automatically at their end.
+- We shouldn't write files/folders that require by the server for running the Application.
+
+10. What is the difference between `package.json` and `package-lock.json`
+- `package-lock.json` keep the exact version number that we are using in the application compared to `package.json` which store starred version. 
+
+11. Why should I not modify `package-lock.json`?
+- It is automatically generated based on the package.json file and it contains the exact version number of a library that we are using it is possible that it depends on another library that is indeed dependent on another, so if we modify the file then we might break this transitive dependency chain.
+
+12. What is `node_modules`? Is it a good idea to push that on git?
+- nodu_module contains data of all libraries installed and their dependency. It is not good practice to push to the repo because it is so heavy and the server automatically generated that at their end.
+
+13. What is `browserlists`
+- Browser list makes our code compatible with a lot of browsers and their old version.
+- we can use it like this if we want to control the app for the targeted audience eg "browser list" : ["last 2 version"] ==> it not only but definitely will last 2 versions of all the browsers available on the internet.
