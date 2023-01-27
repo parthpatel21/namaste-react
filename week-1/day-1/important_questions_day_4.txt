@@ -1,0 +1,42 @@
+1. Is JSX mandatory for React?
+- No
+
+2. Is ES6 mandatory for React?
+- No
+
+3. {TitleComponent}vs{<TitleComponent/>}vs{<TitleComponent></TitleComponent>}in JSX
+- {TitleComponent} - Normal Variable that may content JSX
+- {<TitleComponent/>} - Functional component that may return JSX 
+- {<TitleComponent></TitleComponent>} - Functional component with option to pass children
+
+4. How can I write comments in JSX?
+- {/* A JSX comment */}
+- {/* 
+  Multi
+  line
+  comment
+*/}  
+
+5. What is <React.Fragment></React.Fragment> and <></> ?
+- Both are the same and it used to represent empty tags in React (i.e React Element must Parent but in some cases, we don't require to put an extra node just for grouping child elements, so if we use <></> then we can able to group children without adding the extra node to DOM)
+
+6. What is Virtual DOM?
+- Virtual DOM is a representation of an Orignal DOM that is Lightweight and easy for performing a comparison.
+
+7. What is Reconciliation in React?
+- It is an algorithm that use to find differences between the latest Virtual DOM and the Previous Virtual DOM and tell React what needs to change and what does not on the UI.
+
+8. Why do we need keys in React? When do we need keys in React?
+- We need to Uniquely identify elements so that React identify easily what element has been changed.
+- We only require a key when we have the same Tag's sibling of the same parent otherwise React is smart enough to identify on its own.
+
+9. Can we use the index as keys in React?
+- We can use but React doesn't recommend it because if we add the new element in between, then the key will get changed for the below elements of the newly added element, and then differentiating those elements at the Reconciliation process would cause some bugs.
+
+10. What are props in React? Ways to 
+- props indicate properties in React
+- props can't be mutated directly
+- we can pass props like <SomeComponent anyProp={allProps.data.anyProp} {...allProps.data} /> and we can receive in Props Object as a parameter in SomeComponent
+
+11. What is a Config-Driven UI?
+- Many App is Config which sends by backend API, so in the front end we need to anticipate with the config to show UI to the user this is known as Config Driven UI. Config might get changed based on Location, Gender, Interest, etc.

@@ -1,0 +1,14 @@
+1. What is JSX?
+- JSX is not HTML in JavaScript. It is HTML-like Syntax that helps React's developer to write code familiarly.
+
+2. Superpower of JSX
+- If we don't use JSX in our code and write code using React.createElement() then soon the situation can go out of control, because it is not readable, cleaner, and maintainable.
+- JSX provides syntactic sugar for React.createElement()
+- JSX is more maintainable.
+- JSX requires Less Code.
+- JSX enhances developer experience
+
+3. {TitleComponent}vs{<TitleComponent/>}vs{<TitleComponent></TitleComponent>}in JSX
+- {TitleComponent} - Normal Variable that may content JSX
+- {<TitleComponent/>} - Functional component that may return JSX 
+- {<TitleComponent></TitleComponent>} - Functional component with option to pass children

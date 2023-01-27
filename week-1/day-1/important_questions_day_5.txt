@@ -1,0 +1,18 @@
+1. .js vs. .jsx?
+- It's just a naming convention. If we use .jsx then we are indicating that the file might have JSX
+
+2. Different between Named export or Default export or * Import?
+- Name export can be 0-N in a single file and when we import that file then we have to use {} and write the correct name that is used while exporting that data.
+- Default export are only 1 in single file and while importing we can write whatever name we want
+- * as Object to access exports via object.
+
+3. What is the importance of the config.js file
+- config.js file is used to put hardcoded data that may require at multiple places in the Application.
+
+4. What are React Hooks?
+- React hooks are function that performs some special task.
+- eg- useState - it takes a single parameter as a default value and returns an array. 1st index has a local value and 2nd index has the function to modify that local value, whenever the value gets update React automatically rerender that component.
+- eg- useEffect- it is a side effect handler like API calls.
+
+5 Why do we need a useState hook?
+- To maintain a local state at the component level we require useState. if we use a normal variable and update it React won't get notify to rerender the component
