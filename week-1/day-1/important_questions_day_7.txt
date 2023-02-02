@@ -1,0 +1,19 @@
+1. What are various ways to add images to our App? Explain with code examples
+- we can image the URL in the src attribute of <img />
+- we can import IMG from the path and then put it to the src attribute of <img/>
+- we can directly send path of image by using require(./img.png) in src attribute of <img/>
+- we can import svg images as a Component and use them directly in another component.
+
+2. What would happen if we do console.log(useState())?
+- we will get a type error that says create is not a function because it expects 1st argument as a callback function.
+
+3. How will useEffect behave if we don't add a dependency array? 
+- useEffect will get executed after every render.
+
+4. What is SPA?
+- It stands for Single Page Application.
+- React is a SPA. so if we want to change the page we just have to change the content of that same page.
+
+5. What is the difference between Client Side Routing and Server Side Routing?
+- In Server-side routing, you download an entirely new webpage whenever you click on a link.
+- In Client-side routing the web app (React) downloads at the beginning and displays that whenever it is required by a user.

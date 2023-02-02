@@ -1,0 +1,13 @@
+1. When and why do we need lazy()?
+- If our Application gets bigger Eg : It has more than ~100 components, we can't depend on one bundled file because a user might have to wait so long to see the UI. So the solution is to divide that into chunks(code splitting)
+- We can do code splitting by using lazy() from React Lib
+
+2. What is suspense?
+- It is a component in React that wrap our code-splitter component. We have to use that Suspense for the Code-Splitted component because code-splitting will be on demand, so when we reach that component for 1st time, we might not have downloaded that component.
+
+3. Advantages and disadvantages of using this code-splitting pattern?
+- Code Splitting is a technique where we can divide Applications into chunks that can be loaded on demand.
+- Advantages - Reduce loading time: we are not fetching all the code at once.
+             - Reduce bundle size: By converting the Application into chunks its overall size will reduce.
+  Disadvantages - Increased Complexity: Code Splitting makes our Architecture more complex
+                - Increased Development Time: Code Splitting requires additional efforts
